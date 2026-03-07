@@ -36,12 +36,7 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: {
-        ...devices['Desktop Chrome'],
-        launchOptions: {
-          args: ['--disable-http2'],
-        },
-      },
+      use: { ...devices['Desktop Chrome'] },
     },
 
     // {
