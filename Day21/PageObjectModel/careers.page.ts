@@ -5,7 +5,7 @@ class careeers {
     select_job: any
     page: any
     filters: any
-    apply_job : any
+    // apply_job : any
 
     constructor(page) {
         this.page = page
@@ -14,7 +14,7 @@ class careeers {
         this.uni_role = page.locator('.css-n1m10m').first()
         this.select_job = page.locator('//a[@class="header-module_desktop__Dnj66 header-module_title__9-W3R"]').nth(1)
         this.filters = page.locator('//ul[@class,"filter-values"]')
-        this.apply_job = page.locator('a#apply-button')
+        // this.apply_job = page.locator('a#apply-button')
     }
 
     async launchUrl(url: string) {
